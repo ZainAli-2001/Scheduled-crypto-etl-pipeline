@@ -59,7 +59,7 @@ def get_crypto_data():
 
         BASE_DIR = Path(__file__).resolve().parent
         OUTPUT_DIR = BASE_DIR / "output"
-        OUTPUT_DIR.mkdir(exist_ok=True)
+        OUTPUT_DIR.mkdir("output",exist_ok=True)
 
         output_file = OUTPUT_DIR / f"crypto_data_{today}.csv"
 
