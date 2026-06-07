@@ -83,9 +83,8 @@ def get_crypto_data():
 if __name__ == '__main__':
     # call the function
 
-    # sheduling the task at 8AM
-    # schedule.every().day.at('08:00').do(get_crypto_data)
-    schedule.every().day.at('17:59').do(get_crypto_data)
+    # schedule.every().day.at('11:00').do(get_crypto_data)
+    schedule.every().day.at('11:00').do(get_crypto_data)
     
     while True:
         schedule.run_pending()
